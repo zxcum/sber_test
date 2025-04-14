@@ -30,7 +30,7 @@ class DataBase:
         if not self.connection:
             self.connect()
 
-        shop_id = self.get_shop_id(name=shop_name)
+        shop_id = shop_name
         for prod_name in sale_list.keys():
             prod_id = self.get_prod_id(name=prod_name)
 
